@@ -41,7 +41,7 @@ tasks.register('stagePythonEngine', Sync) {
 }
 chaquopy {
     defaultConfig {
-        version '3.12'
+        version '3.14'
         def configuredPython = System.getenv('CHAQUOPY_PYTHON')
         def localPython = rootProject.file('../.venv/Scripts/python.exe')
         buildPython configuredPython ?: (localPython.exists() ? localPython.absolutePath : 'python3.12')
